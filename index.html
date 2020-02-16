@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create a New Event</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <form onsubmit="return validate()" action="prac.html">
+        <fieldset>
+            <legend>Create Event</legend>
+            <label>Event type:</label>
+            <select id="type">
+                <option value="Concert">Concert</option>
+                <option value="Seminar">Seminar</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Conference">Conference</option>
+            </select><br><br>
+            <label for="title">Event Title: <input id="title" name="title" type="text"></label><br><br>
+            <label>Event Dates: <input name="start" type="date"> to <input name="end" type="date"></label> <br><br>
+            <input type="checkbox">
+            <label> Is Registration Required?</label><br>
+            <input type="checkbox">
+            <label> Is this event associated with any Family Programs</label><br>
+            <input type="checkbox">
+            <label> Upon Regristration Completion, Are Users to receive on Auto Generated Email?</label><br>
+            <input type="checkbox">
+            <label> Is there a Point of Contact?</label><br>
+            <input type="checkbox">
+            <label> Is there a Hosting Command Point of Contact?</label><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </fieldset>
+    </form>
+</body>
+</html>
